@@ -1,0 +1,596 @@
+body {
+    width: 100%;
+    max-width: 100%;
+    font-family: 'Gotham';
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    background-image: url("../img/bg.jpg");
+}
+
+.wrapper{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 1230px;
+    width: 95%;
+}
+
+/*cabecera*/
+header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 100%;
+    z-index: 2;
+    transition: all .5s;
+}
+
+header.scrolled {background-color: rgba(255,255,255,0.9); padding: 5px 0;}
+header.scrolled .boton {box-shadow: inset 0px 0px 0px 1px #f40bd3;}
+.hamburger {display: none !important;}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {background-color: #f40bd3 !important;}
+.hamburger--spring.is-active .hamburger-inner {background-color: transparent !important;}
+
+#logo {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-nav {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 65px;
+}
+
+.main-nav a {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding: 25px;
+}
+
+.menu-item {
+    color: #7d7d7d;
+    font-size: 22px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.menu-item:hover{
+    color:#f40bd3;
+}
+
+header .boton{
+    float: right;
+}
+
+.boton{
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    color:#f40bd3;
+    border: none;
+    border-radius: 100px;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color: #f40bd3;
+    color:#fff; 
+}
+
+#gradient {position: absolute; left: 0; top: 0; width: 100%; background-repeat: repeat-x; background-image: url("../img/gradient.png"); height: 415px;}
+
+/*seccion hero*/
+#hero {
+    position: relative;
+    display: block;
+    padding-top: 130px;
+}
+
+.img-slide {
+    position: relative;
+    display: inline-block;
+    padding-left: 100px;
+}
+
+.text-slide {
+    position: absolute;
+    right: 50px;
+    top: 100px;
+    width: 45%;
+}
+
+.text-slide p {
+    font-size: 105px;
+    font-weight: 700;
+    letter-spacing: -7px;
+}
+
+.text-slide .boton {
+    margin-top: 70px;
+    font-size: 22px;
+    color: #fff;
+    background-color: #5b12ea;
+    padding: 30px 70px;
+}
+
+/*seccion content*/
+#content{
+    position: relative;
+    display: block;
+    margin-top: 60px;
+}
+
+.row {
+    display: flex;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+}
+
+#bloque1 {
+    background-image: url(../img/imagen-azul.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#bloque2{
+    background-color: #0e0e0f;
+}
+
+.inner-flex {
+    padding: 120px 95px;
+    display: block;
+}
+
+.subtitle {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: -1px;
+}
+
+.title {
+    display: block;
+    font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -3px;
+    margin-top: 10px;
+}
+
+#bloque3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 120px 95px;
+}
+
+#bloque3-text .subtitle{
+    display: block;
+    color: rgba(0,0,0,.5);
+}
+
+#bloque3-text .title{
+    display: block;
+    color: black;
+}
+
+#bloque4 {
+    background-color: #f40bd3;
+}
+
+#bloque4 .inner-flex {
+    padding: 80px 95px;
+}
+
+#bloque4 img{
+    margin-left: 4.5%;
+    display: inline-block;
+    width: 60%;
+    vertical-align: middle;
+}
+
+#bloque4-text {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
+
+#bloque5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 50%;
+    padding: 120px 95px;
+}
+#bloque5-text .subtitle{
+    display: block;
+    color: rgba(0,0,0,.5);
+}
+#bloque5-text .title{
+    display: block;
+    color: black;
+}
+#bloque6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/chica.jpg);
+    background-size: cover;
+    background-position: right top;
+    width: 50%;
+    padding: 120px 95px;
+}
+
+
+/*seccion comunidad*/
+#comunidad{
+    background-color: #0e0e0f;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 95px;
+}
+
+#comunidad .subtitle {
+    font-size: 25px;
+    text-align: center;
+}
+
+#number{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    letter-spacing: -15px;
+    color: #fff;
+    font-size: 190px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+
+/*footer*/
+/*footer top*/
+#footer-top{
+    padding: 80px 0;
+}
+
+#footer-nav{
+    display: inline-block;
+}
+
+#footer-nav a {
+    padding: 10px;
+}
+
+#redes{
+    display: inline-block;
+}
+
+#redes span {
+    color: #7c7c7c;
+    font-size: 22px;
+    padding-right: 15px;
+    font-weight: 600;
+}
+
+#redes a{
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 100px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    transition: all .3s;
+}
+
+#redes a:first-of-type {
+    background-color: #2541b6;
+}
+
+#redes a:first-of-type:hover {
+    background-color: white;
+    color: #2541b6;
+    border: 1px solid #2541b6;
+}
+
+#redes a:nth-of-type(2) {
+    background-color: #00c3ef;
+}
+
+#redes a:nth-of-type(2):hover {
+    background-color: white;
+    color: #00c3ef;
+    border: 1px solid #00c3ef;
+}
+
+#contacto{
+    display: inline-block;
+    float: right;
+    margin-top: -15px;
+}
+
+#contacto a{
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 35px;
+    border-radius: 100px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    transition: all .3s;
+    background-color: #f40bd3;
+}
+
+#contacto-text{
+    display: inline-block;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+#contacto-text span {
+    color: #7c7c7c;
+    font-size: 20px;
+    padding-right: 15px;
+    font-weight: 400;
+}
+
+#contacto-text p {
+    font-size: 40px;
+    letter-spacing: -3px;
+    font-weight: 800;
+    color: #7c7c7c;
+}
+/*footer bottom*/
+#footer-bottom {
+    padding-bottom: 80px;
+}
+
+#footer-bottom span, #footer-bottom p {
+    color: #b8b8b8;
+    font-size: 15px;
+}
+
+#footer-bottom span {
+    font-weight: 600;
+}
+
+#footer-bottom p {
+    font-weight: 400;
+    margin-top: 30px;
+    width: 75%;
+}
+
+@media screen and (max-width: 1100px){
+    .hamburger {
+        z-index: 1; 
+        position: relative; 
+        display: inline-block !important; 
+        float: right;
+    }
+    header .boton {display: none;}
+    header .wrapper {overflow:  visible;}
+    .main-nav{display: none;}
+    .main-nav {position: absolute;width: 100%;top: -30px;left: 0;margin-left: 0;padding-top: 80px;padding-right: 20px;text-align: right;background-color: #fff;}
+    .wrapper {width: 100%; padding: 0 30px;}
+
+    /*slider*/
+    .img-slide{
+        width: 70%;
+        padding-left: 5%;
+    }
+    .text-slide{
+        top:70px;
+    }
+    .text-slide p{
+        font-size: 95px;
+    }
+    .text-slide .boton{
+        font-size: 20px;
+        padding: 15px 55px;
+    }
+    /*secciones*/
+    .row:first-child{
+        flex-direction: column;
+    }
+    #container{
+        flex-direction: row;
+    }
+    #bloque1, #bloque2 {
+        width: 50%;
+    }
+
+    /*footer*/
+    div#contacto {
+        display: block;
+        margin-top: 50px;
+        float: none;
+    }
+
+    .menu-item{
+        font-size: 16px;
+    }
+    #redes span{
+        font-size: 16px;
+    }
+    #contacto-text span{
+        font-size: 18px;
+    }
+    #contacto-text p{
+        font-size: 35px;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    /*slider*/
+    .text-slide{
+        top:40px;
+        right: 25px;
+    }
+    .text-slide p{
+        font-size: 80px;
+    }
+    .text-slide .boton{
+        font-size: 18px;
+        padding: 15px 35px;
+        margin-top: 35px;
+    }  
+    /*secciones*/
+    #container {
+        flex-direction: column;
+    }
+    #bloque1, #bloque2 {
+        width: 100%;
+    }
+    .row:last-of-type{
+        flex-direction: column;
+    }
+    #bloque5, #bloque6{
+        width: 100%;
+    }
+    /*footer*/
+    #footer-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .img-slide {
+        display: none;
+    }
+    .text-slide {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 100%;
+    }
+    /*secciones*/
+    #bloque3{
+        flex-direction: column;
+    }
+    /*seccion rosa*/
+    #bloque4-text {
+        display: block;
+        width: 100%;
+    }
+    #bloque4 img {
+        display: block;
+        width: 75%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    /*comunidad*/
+    #number{
+        font-size: 140px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .text-slide p {
+        font-size: 50px;
+    }
+
+    .inner-flex{
+        padding: 50px;
+    }
+
+    #bloque3{
+        padding: 50px;
+    }
+
+    #bloque4 .inner-flex{
+        padding: 50px;
+    }
+
+    #number{
+        font-size: 110px;
+    }
+    .boton{
+        font-size: 16px;
+        padding: 12px;
+        width: 150px;
+    }
+    .title{
+        font-size: 30px;
+    }
+
+    /*footer*/
+    #contacto a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 25px;
+    }
+    #contacto-text span {
+        font-size: 16px;
+    }
+    #contacto-text p {
+        font-size: 30px;
+    }
+    #footer-bottom p {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 380px){
+    #number {
+        font-size: 80px;
+        letter-spacing: -10px;
+    }
+    .text-slide .boton {
+        font-size: 13px;
+        padding: 12px 12px;
+    }
+    .subtitle{
+        font-size:18px;
+    }
+    .title{
+        font-size: 26px;
+    }
+    #bloque5-text{
+        padding-right: 10px;
+    }
+
+    /*footer*/
+    div#contacto{
+        margin-top: 35px;
+    }
+    #contacto a {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 20px;
+    }
+    #contacto-text span {
+        font-size: 15px;
+    }
+    #contacto-text p {
+        font-size: 24px;
+    }
+}

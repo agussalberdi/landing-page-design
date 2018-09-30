@@ -1,0 +1,29 @@
+/*Medium*/
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/GOTHAMROUNDED-MEDIUM.OTF') format("opentype");
+    font-style: normal;
+    font-weight: 500;
+}
+/*Light*/
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/GOTHAMROUNDED-LIGHT.OTF') format("opentype");
+    font-style: normal;
+    font-weight: 300;
+}
+/*Bold*/
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/GOTHAMROUNDED-BOLD.OTF') format("opentype");
+    font-style: normal;
+    font-weight: 700;
+}
+/*Book*/
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/GOTHAMROUNDED-BOOK.OTF') format("opentype");
+    font-style: normal;
+    font-weight: 100;
+}
+
