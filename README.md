@@ -1,4 +1,3 @@
-# home-test
+# Landing page
 Hello everyone!
-This is a small frontend responsive design of a HOME page, using some knowledge about HTML, CSS and a little bit of Javascript, including the framework Jquery.
-
+Check out this small website's HOME page. It looks great on any device, thanks to HTML, CSS, and a touch of JavaScript. It's easy to use and looks good no matter how you view it.
